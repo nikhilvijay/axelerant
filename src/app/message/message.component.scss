@@ -1,0 +1,106 @@
+.notification {
+    background: #00000073;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    .alert {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 16px;
+        padding: 64px;
+        h3 {
+            font-family: Almarai;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+            color: #212121;
+        }
+        p {
+            font-family: Almarai;
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            color: #212121;
+        }
+    }
+}
+
+//iphone
+@media only screen and (max-width: 414px) {
+    .alert {
+        width: 350px;
+        height: 359px;
+        left: calc(50% - 175px);
+        top: calc(50vh - 174.5px);
+        img {
+            width: 80px;
+            height: 80px;
+            margin: 20px 0px;
+        }
+        h3 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 22px;
+            margin: 20px 0px;
+        }
+    }
+}
+
+//ipad mini
+@media only screen and (min-width: 415px),
+screen and (max-width:768px) {
+    .alert {
+        width: 582px;
+        height: 339px;
+        left: calc(50% - 291px);
+        top: calc(50vh - 169.5px);
+        img {
+            width: 96px;
+            height: 96px;
+            margin: 24px 0px;
+        }
+        h3 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 22px;
+            margin: 24px 0px;
+        }
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .alert {
+        width: 574px;
+        height: 428px;
+        left: calc(50% - 287px);
+        top: calc(50vh - 214px);
+        img {
+            width: 128px;
+            height: 128px;
+            margin: 32px 0px;
+        }
+        h3 {
+            font-size: 48px;
+            line-height: 54px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 27px;
+            margin: 32px 0px;
+        }
+    }
+}

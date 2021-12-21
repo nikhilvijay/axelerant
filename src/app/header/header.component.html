@@ -1,0 +1,18 @@
+<div [className]="visibleMenu? 'warning inactive':'warning'">
+    <div>
+        <img src="./assets/warning.svg" alt="warning">
+        <span>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim velit mollit.</span>
+    </div>
+</div>
+<div [className]="visibleMenu? 'header active':'header'">
+    <span class="menu" (click)="showMenu()"><img src="./assets/menu.svg" alt="menu"></span>
+    <img src="./assets/logo.svg" alt="LOGOIPSUM">
+    <span class="logout"><img src="./assets/logout.svg" alt="logout"></span>
+    <ul>
+        <li>Dashboard</li>
+        <li class="active">Account</li>
+        <li>Help</li>
+        <li>Logout</li>
+    </ul>
+</div>
